@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Resources</title>
+    <style>
+        /* Internal CSS */
+
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Sticky Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000; /* Ensures header stays on top */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        /* Adjust container to account for fixed header height */
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 30px; /* Top margin accounts for header height */
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .course-image {
+            width: 100%;
+            height: 180px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+            flex-grow: 1;
+        }
+
+        .course-link {
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .course-link:hover {
+            background-color: #45a049;
+        }
+
+        .course-author {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .course-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .course-card {
+                width: 100%;
+            }
+
+            header {
+                padding: 1rem 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .container {
+                margin: 80px auto 20px; /* Adjusted for smaller header */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Learning Resources</h1>
+        <p>Your gateway to Success</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="youtube-courses">
+            <h2>YouTube Courses</h2>
+            <div class="courses">
+              
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/hdI2bqOjy3c/0.jpg" alt="JavaScript Crash Course for Beginners" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">JavaScript Crash Course for Beginners</div>
+                        <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: Traversy Media</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/Ke90Tje7VS0/0.jpg" alt="React Tutorial for Beginners" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">React Tutorial for Beginners</div>
+                        <a href="https://www.youtube.com/watch?v=Ke90Tje7VS0" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: Programming with Mosh</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/_uQrJ0TkZlc/0.jpg" alt="Python Full Course" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Python Full Course</div>
+                        <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: Programming with Mosh</div>
+                    </div>
+                </div>
+        
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/GG4wt2Vjlws/0.jpg" alt="HTML & CSS Tutorial for Beginners" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">HTML & CSS Tutorial for Beginners</div>
+                        <a href="https://www.youtube.com/watch?v=GG4wt2Vjlws" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: freeCodeCamp.org</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/3PHXvlpOkf4/0.jpg" alt="Python Django Tutorial" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Python Django Tutorial</div>
+                        <a href="https://www.youtube.com/watch?v=3PHXvlpOkf4" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: Corey Schafer</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.youtube.com/vi/RBSGKlAvoiM/0.jpg" alt="Data Structures and Algorithms" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Data Structures and Algorithms</div>
+                        <a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank" class="course-link">Watch on YouTube</a>
+                        <div class="course-author">By: freeCodeCamp.org</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="udemy-courses">
+            <h2>Udemy Courses</h2>
+            <div class="courses">
+          
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/1234567_abcdefg.jpg" alt="The Complete JavaScript Course 2023" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">The Complete JavaScript Course 2023</div>
+                        <a href="https://www.udemy.com/course/the-complete-javascript-course/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Jonas Schmedtmann</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/6789012_hijklmn.jpg" alt="React - The Complete Guide" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">React - The Complete Guide</div>
+                        <a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Academind by Maximilian Schwarzmüller</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/2345678_opqrstu.jpg" alt="Python for Data Science and Machine Learning Bootcamp" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Python for Data Science and Machine Learning Bootcamp</div>
+                        <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Jose Portilla</div>
+                    </div>
+                </div>
+            
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/3456789_uvwxyz.jpg" alt="The Complete React Developer Course" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">The Complete React Developer Course</div>
+                        <a href="https://www.udemy.com/course/the-complete-react-developer-course/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Andrew Mead</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/4567890_abcdef.jpg" alt="Advanced CSS and Sass" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Advanced CSS and Sass</div>
+                        <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Jonas Schmedtmann</div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://img-c.udemycdn.com/course/240x135/5678901_bcdefgh.jpg" alt="Machine Learning A-Z" class="course-image">
+                    <div class="course-content">
+                        <div class="course-title">Machine Learning A-Z</div>
+                        <a href="https://www.udemy.com/course/machinelearning/" target="_blank" class="course-link">View on Udemy</a>
+                        <div class="course-author">By: Kirill Eremenko & Hadelin de Ponteves</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

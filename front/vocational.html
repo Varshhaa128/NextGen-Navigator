@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocational Courses</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #f0f4c3, #e1f5fe);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #b2dfdb;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .content {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            margin-bottom: 40px;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .content img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #00796b;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #004d40;
+            margin: 20px 0 10px;
+            border-bottom: 2px solid #e0f2f1;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 12px 25px;
+            background: #00796b;
+            color: #ffffff;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a.back-link:hover {
+            background-color: #004d40;
+            transform: translateY(-3px);
+        }
+
+        /* New Section Styles */
+        .icon {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .section-header img {
+            margin-right: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .content img {
+                max-width: 100%;
+            }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .section-header img {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vocational Courses</h1>
+        <nav>
+            <a href="#types">Types of Courses</a>
+            <a href="#skills">Skills Needed</a>
+            <a href="#jobs">Job Opportunities</a>
+            <a href="#growth">Career Growth</a>
+            <a href="#further-education">Further Education</a>
+            <a href="#organizations">Professional Organizations</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content" id="types">
+            <img src="voctional.png" alt="Vocational Courses">
+            <h2>Explore Your Vocational Options</h2>
+            <h3>Types of Vocational Courses:</h3>
+            <ul>
+                <li><strong>Diploma in Nursing:</strong> Prepares students for roles such as Registered Nurse (RN) by covering subjects like anatomy, physiology, patient care, and medical ethics.</li>
+                <li><strong>Diploma in ITI (Industrial Training Institute) Courses:</strong> Offers training in various trades such as electrician, plumber, mechanic, and welder, providing practical skills required in the industrial sector.</li>
+                <li><strong>Certificate in Culinary Arts:</strong> Focuses on cooking techniques, food safety, menu planning, and kitchen management, preparing students for careers as chefs or kitchen supervisors.</li>
+                <li><strong>Certificate in Graphic Design:</strong> Teaches design principles, software proficiency (like Adobe Creative Suite), and creative techniques to prepare students for roles in digital and print media.</li>
+                <li><strong>Diploma in Automotive Technology:</strong> Covers vehicle maintenance, repair, diagnostics, and the latest automotive technologies, preparing students for careers as automotive technicians.</li>
+                <li><strong>Certificate in Cosmetology:</strong> Provides training in hair styling, makeup application, skincare, and salon management, preparing students for careers as cosmetologists or salon managers.</li>
+                <li><strong>Diploma in Electrician Training:</strong> Focuses on electrical systems, wiring, safety protocols, and troubleshooting, preparing students for careers as licensed electricians.</li>
+                <li><strong>Certificate in Digital Marketing:</strong> Covers SEO, social media marketing, content creation, and analytics, preparing students for roles in online marketing and brand management.</li>
+                <li><strong>Diploma in HVAC (Heating, Ventilation, and Air Conditioning):</strong> Teaches installation, maintenance, and repair of HVAC systems, preparing students for careers as HVAC technicians.</li>
+                <li><strong>Certificate in Welding:</strong> Provides training in various welding techniques, safety practices, and metal fabrication, preparing students for careers in manufacturing and construction.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="skills">
+            <h3>Skills Needed:</h3>
+            <ul>
+                <li><strong>Practical Skills for the Specific Trade:</strong> Hands-on abilities related to the chosen vocational field, such as mechanical skills for automotive technology or design skills for graphic design.</li>
+                <li><strong>Attention to Detail:</strong> Precision is crucial in roles like nursing, electrical work, and culinary arts to ensure quality and safety.</li>
+                <li><strong>Problem-Solving:</strong> Ability to identify issues and implement effective solutions, essential in technical and service-oriented roles.</li>
+                <li><strong>Technical Proficiency:</strong> Familiarity with relevant tools, equipment, and software specific to the trade.</li>
+                <li><strong>Time Management:</strong> Efficiently managing tasks and deadlines to maintain productivity and meet project requirements.</li>
+                <li><strong>Communication Skills:</strong> Clear communication with colleagues, clients, and supervisors is vital in most vocational fields.</li>
+                <li><strong>Physical Stamina:</strong> Many vocational roles require physical endurance and the ability to perform tasks that may be physically demanding.</li>
+                <li><strong>Adaptability:</strong> Being open to learning new techniques and adapting to changes in technology or industry standards.</li>
+                <li><strong>Customer Service Skills:</strong> Especially important in fields like cosmetology and digital marketing, where interaction with clients is frequent.</li>
+                <li><strong>Safety Awareness:</strong> Understanding and adhering to safety protocols to prevent accidents and ensure a safe working environment.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="jobs">
+            <h3>Job Opportunities:</h3>
+            <ul>
+                <li><strong>Healthcare Assistant:</strong> Provides support to nurses and other healthcare professionals, assisting with patient care and administrative tasks.</li>
+                <li><strong>Technician:</strong> Specializes in areas such as automotive, electrical, or HVAC, performing maintenance, repairs, and installations.</li>
+                <li><strong>Culinary Chef:</strong> Prepares and cooks food in restaurants, hotels, or catering services, often specializing in specific cuisines or techniques.</li>
+                <li><strong>Graphic Designer:</strong> Creates visual content for advertisements, websites, magazines, and other media using design software.</li>
+                <li><strong>Electrician:</strong> Installs, maintains, and repairs electrical systems in residential, commercial, and industrial settings.</li>
+                <li><strong>Digital Marketer:</strong> Develops and implements online marketing strategies, including social media campaigns, SEO, and content marketing.</li>
+                <li><strong>Cosmetologist:</strong> Provides beauty services such as hair styling, makeup application, and skincare treatments in salons or as freelancers.</li>
+                <li><strong>HVAC Technician:</strong> Installs and services heating, ventilation, and air conditioning systems in buildings.</li>
+                <li><strong>Welder:</strong> Joins metal parts together using various welding techniques, working in manufacturing, construction, or repair industries.</li>
+                <li><strong>Automotive Technician:</strong> Diagnoses and repairs vehicle issues, ensuring cars are safe and functioning properly.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="growth">
+            <h3>Career Growth:</h3>
+            <ul>
+                <li><strong>Advanced Certifications:</strong> Obtaining additional certifications or licenses can lead to specialized roles and higher pay.</li>
+                <li><strong>Supervisory Roles:</strong> With experience, professionals can move into supervisory or managerial positions, overseeing teams and projects.</li>
+                <li><strong>Entrepreneurship:</strong> Many vocational professionals choose to start their own businesses, such as opening a salon, launching a digital marketing agency, or establishing an auto repair shop.</li>
+                <li><strong>Specialization:</strong> Focusing on a niche area within the trade can lead to expertise and demand in specific markets, such as specializing in eco-friendly welding techniques or advanced culinary arts.</li>
+                <li><strong>Teaching and Training:</strong> Experienced professionals can transition into roles as instructors or trainers, sharing their knowledge with the next generation of workers.</li>
+                <li><strong>Cross-Training:</strong> Learning additional trades or complementary skills can open up new career pathways and increase job security.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="further-education">
+            <h3>Further Education Options:</h3>
+            <ul>
+                <li><strong>Associate Degrees:</strong> Offered by community colleges, these degrees provide more comprehensive education in a vocational field.</li>
+                <li><strong>Bachelor’s Degrees:</strong> For those looking to advance further, bachelor’s degrees in related fields can provide broader knowledge and open doors to higher-level positions.</li>
+                <li><strong>Online Courses and Certifications:</strong> Flexible learning options that allow professionals to continue their education while working.</li>
+                <li><strong>Apprenticeships:</strong> Combining on-the-job training with classroom instruction to gain advanced skills and experience.</li>
+            </ul>
+        </div>
+
+        <div class="content" id="organizations">
+            <h3>Professional Organizations:</h3>
+            <ul>
+                <li><strong>National Vocational Education Association (NVEA):</strong> Supports vocational education professionals with resources, training, and advocacy.</li>
+                <li><strong>American Culinary Federation (ACF):</strong> Offers certifications, networking, and professional development for culinary professionals.</li>
+                <li><strong>International Association of Electrical Inspectors (IAEI):</strong> Provides standards, training, and networking for electricians and electrical inspectors.</li>
+                <li><strong>Graphic Artists Guild:</strong> Advocates for the rights of graphic artists and provides resources for professional development.</li>
+                <li><strong>Digital Marketing Institute (DMI):</strong> Offers certifications and resources for digital marketers to stay updated with industry trends.</li>
+                <li><strong>National Association of Home Builders (NAHB):</strong> Provides resources and networking for HVAC technicians and other home service professionals.</li>
+            </ul>
+        </div>
+
+        <a href="roadmap.html" class="back-link">Back to Main Menu</a>
+    </div>
+</body>
+</html>
